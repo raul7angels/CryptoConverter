@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -21,18 +27,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BBL-NewLogo" highlightedImage="BBL-NewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wb5-ze-oK5">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="ggn-lX-Yzf"/>
-                                    <constraint firstAttribute="height" constant="300" id="xVs-r6-RtL"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multi Crypto Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs7-bC-kXM">
+                                <rect key="frame" x="43" y="315.5" width="289.5" height="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BBL-NewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jaJ-Zg-YGO">
+                                <rect key="frame" x="16" y="20" width="343" height="241"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wb5-ze-oK5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Fm-H1-w1k"/>
-                            <constraint firstItem="wb5-ze-oK5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="n7R-kY-vvk"/>
+                            <constraint firstItem="Vs7-bC-kXM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6WB-8F-Szb"/>
+                            <constraint firstItem="Vs7-bC-kXM" firstAttribute="top" secondItem="jaJ-Zg-YGO" secondAttribute="bottom" constant="54.5" id="B6a-O4-wpo"/>
+                            <constraint firstItem="Vs7-bC-kXM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BA0-G8-qfh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jaJ-Zg-YGO" secondAttribute="trailing" id="JgZ-sL-s4S"/>
+                            <constraint firstItem="jaJ-Zg-YGO" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="Jmc-a5-NpP"/>
+                            <constraint firstItem="jaJ-Zg-YGO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="US7-lq-QMd"/>
                         </constraints>
                     </view>
                 </viewController>
